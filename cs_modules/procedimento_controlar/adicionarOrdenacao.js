@@ -73,3 +73,13 @@ function adicionarOrdenacao (BaseName) {
     }
   }
 }
+
+function copyToClipboard(event, text) {
+	var tempField = jQuery('<input />');
+	jQuery('body').append(tempField);
+	tempField.val(text).select();
+	document.execCommand('copy');
+	tempField.remove();
+	event.stopPropagation();
+}
+
