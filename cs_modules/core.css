@@ -169,3 +169,7 @@
   text-decoration: none;
   background-color: #E0E0E0;
 }
+
+table.tabelaControle tr:nth-child(even) {
+  background-color:#eeeeee;
+}
